@@ -2,7 +2,6 @@
 
 This scripts process the data from http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
 
-
 ## Instructions
 
 + Download & extract the data files into a directory
@@ -15,4 +14,4 @@ I the variable `result` (a dataframe) you have the summarized information.
 
 ## Code Book
 
-The data frame information is described in the file `CodeBook.md`
+The data frame information is described in the file `CodeBook.md`.
