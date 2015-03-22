@@ -45,6 +45,12 @@ names(s_all)[1] <- "Subject"
 # Rename columns in data tables with their descriptive name from the features
 # table. Ensure all columns have a valid & unique name
 names(x_all) <- make.names(as.character(features[paste("V",features$V1, sep="") == names(x_all),2]), unique=TRUE)
+names(x_all) <- gsub("\\.\\.\\.", ".", names(x_all))
+names(x_all) <- gsub("\\.\\.", ".", names(x_all))
+names(x_all) <- sub("\\.\\.$", "", names(x_all))
+names(x_all) <- sub("\\.$", "", names(x_all))
+names(x_all) <- sub("^t", "time.", names(x_all))
+names(x_all) <- sub("^f", "frequency.", names(x_all))
 
 ## STEP 2
 
